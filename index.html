@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <meta charset="utf-8">
+  <meta name="keywords" content="Freelancer FrontEnd, Desarrollador web, Servicios Paginas web">
+  <meta name="description" content="Diseño de paginas web profesionales modernas">
+  <meta name="owner" content="Oliver Aparicio Martinez">
+  <meta name="author" content="Oliver Aparicio Martinez">
+  <meta name="robots" content="index, follow">
+  <title>Oliver Aparicio Martinez</title>
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>OLIVER APARICIO MARTINEZ</h1>
+    <figure>
+      <img src="img/perfil.jpg" alt="Author">
+    </figure>
+    <h2>DESARROLLADOR FRONTEND</h2>
+    <div class="icon">
+      <a class="whats"></a>
+      <a href="https://www.instagram.com/oliver_boy13/" target="blank"></a>
+    </div>
+  </header>
+  <nav>
+    <ul class="nav">
+      <li onClick="navSection('perfil')" class="nav__item">PERFIL</li>
+      <li onClick="navSection('proyectos')" class="nav__item">PROYECTOS</li>
+      <li onClick="navSection('skills')" class="nav__item">SKILLS</li>
+      <li onClick="navSection('contacto')" class="nav__item">CONTACTO</li>
+    </ul>
+  </nav>
+  <section class="contenedor" id="slider">
+    <div class="contenedor__item" id="perfil" style="display:block">
+      <h1>OLIVER APARICIO MARTINEZ</h1>
+      <h2>23 años</h2>
+      <figure>
+        <img src="img/perfil.jpg" alt="Author">
+      </figure>
+      <h2>ING. SISTEMAS COMPUTACIONALES</h2>
+      <h2>DESARROLLADOR FRONTEND</h2>
+      <h3>SOY UN DESARROLLADOR WEB FRONTEND, ME APASIONA EL DISEÑO WEB, DE IGUAL MANERA ME GUSTA EL 
+        DESARROLLO BACKEND EN LAS CONSTRUCCION DE APLICACIONES WEB, POR LO CUAL ME MANTENGO APRENDIENDO 
+        PARA LLEGAR A SER UN DESARROLLADOR FULLSTACK EN UN FUTURO.</h3>
+    </div>
+    <div class="contenedor__item" id="proyectos" style="display:none">
+      <div class="contenedor__item--proyecto">
+        <img src="img/proyecto.png" alt="Sistema-Evaluacion">
+        <h3>SISTEMA DE EVALUACION PARA EL API ( ADMINISTRACION PORTUARIA INTEGRAL ) DE SALINA CRUZ</h3>
+        <h4>ESTA APLICACION AYUDA AL AREA DE RECURSOS HUMANOS PARA LA REALIZACION DE CUESTIONARIOS ANUALES
+          QUE LA JEFA DEL DEPARTAMENTO GENERA SEGUN SEA NECESARIO. EL ADMINISTRADOR TIENE ACCESO A TODOS LOS USUARIOS PUEDE DAR DE ALTA Y DE BAJA SEGUN SI SE ENCUENTREN LABORANDO PARA LA EMPRESA, CADA QUE FINALIZA UNA EVALUACION PUEDE TENER ACCESO A RESUMENES EN PDF Y GRAFICAS DINAMICAS.
+          LOS USUARIOS PUEDEN INGRESAR AL SISTEMA PARA VER SUS RESULTADOS DE TODOS LOS CUESTIONARIOS.
+        </h4>
+        <p></p>
+      </div>
+    </div>
+    <div class="contenedor__item" id="skills" style="display:none">
+      <h1>SKILLS</h1>
+      <div class="skills">
+        <div class="skills__item">
+          <p>HTML5</p>
+          <div class="skills__item--barra html">
+            <p></p>
+          </div>
+          <p>90%</p>
+        </div>
+        <div class="skills__item">
+          <p>CSS3</p>
+          <div class="skills__item--barra css">
+            <p></p>
+          </div>
+          <p>95%</p>
+        </div>
+        <div class="skills__item">
+          <p>JAVASCRIPT</p>
+          <div class="skills__item--barra js">
+            <p></p>
+          </div>
+          <p>80%</p>
+        </div>
+        <div class="skills__item">
+          <p>PHP</p>
+          <div class="skills__item--barra php">
+            <p></p>
+          </div>
+          <p>50%</p>
+        </div>
+      </div>
+      <h2>CONOCIMIENTOS</h2>
+      <div class="conocimientos">
+        <p>NODE JS</p>
+        <p>ANGULAR 4</p>
+        <p>PHOTOSHOP</p>
+        <p>SASS</p>
+        <p>PUG</p>
+        <p>GIT</p>
+      </div>
+    </div>
+    <div class="contenedor__item" id="contacto" style="display:none">
+      <h1>CONTACTO</h1>
+      <form action="contact.php" id="form" method="post" class="formulario">
+        <input type="text" placeholder="Tu nombre" id="name" name="name">
+        <input type="text" placeholder="Tu email" id="email" name="email">
+        <input type="submit" value="Enviar">
+      </form>
+      <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d30652.260246944003!2d-95.20838143065367!3d16.19303987179091!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1500877706746" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+  <aside class="icon-email">
+    <img onClick="navSection('contacto')" src="img/mail.png" alt="Email">
+  </aside>
+  <aside class="icon-principal">
+    <img src="img/multimedia.png" alt="Desarrollo Web">
+  </aside>
+  <div class="flechas">
+    <p onClick="displaySection('prev')"><img src="img/arrows.png" alt=""></p>
+    <p onClick="displaySection('next')"><img src="img/arrows.png" alt=""></p>
+  </div>
+  <footer>
+    <img src="img/arrows.png" alt="Flecha">
+    <div class="redes">
+      <a class="redes__item" href="https://github.com/Oliver-Apa-Mtz" target="blank"></a>
+      <a class="redes__item" href="https://www.linkedin.com/in/oliver-aparicio-martinez-135800136/" target="blank"></a>
+      <a class="redes__item" href="https://www.facebook.com/oliver.zowi" target="blank"></a>
+      <a class="redes__item" href="https://twitter.com/OliverMtz21" target="blank"></a>
+    </div>
+    <p>© 2017 All rights reserved | Oliver Aparicio Martinez</p>
+  </footer>
+  <script src="js/main.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-103139410-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+</html>
